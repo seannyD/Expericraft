@@ -1,0 +1,47 @@
+static class Item%name% extends Item
+{
+    private Block[] blocksEffectiveAgainst = new Block[]{%blocks%};
+
+    //harvest level
+    int harvest = %harvest%;
+
+    protected float efficiencyOnProperMaterial;
+
+    protected Item%name%()
+    {
+        efficiencyOnProperMaterial = %ucinkovitost%;
+        setMaxDamage(%uses%);
+        setMaxStackSize(1);
+        this.setCreativeTab(CreativeTabs.TOOLS);
+    }
+
+
+    @Override
+    public float getStrVsBlock(ItemStack par1ItemStack, IBlockState par2Block)
+    {
+        for (int i = 0; i < blocksEffectiveAgainst.length; i++)
+        {
+            if (blocksEffectiveAgainst[i] == par2Block.getBlock())
+            {
+                return efficiencyOnProperMaterial;
+            }
+        }
+
+        return 0.0F;
+    }
+
+    @Override
+    public boolean isFull3D()
+    {
+        return true;
+    }
+
+    @Override
+    public int getItemEnchantability()
+    {
+		//kok se lohk cara
+        return %enta%;
+    }
+
+    %txf%
+}

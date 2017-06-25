@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mods>
+
+
+<mod>
+
+	<name>
+		RedGround
+	</name>
+
+	<type>
+		Block
+	</type>
+
+	<description>
+		Block is basic unit in minecraft. It is 3D object that can be placed in world.
+	</description>
+
+</mod>
+
+
+<mod>
+
+	<name>
+		BlueGround
+	</name>
+
+	<type>
+		Block
+	</type>
+
+	<description>
+		Block is basic unit in minecraft. It is 3D object that can be placed in world.
+	</description>
+
+</mod>
+
+
+<mod>
+
+	<name>
+		OrageGround
+	</name>
+
+	<type>
+		Block
+	</type>
+
+	<description>
+		Block is basic unit in minecraft. It is 3D object that can be placed in world.
+	</description>
+
+</mod>
+
+
+<mod>
+
+	<name>
+		GreenGround
+	</name>
+
+	<type>
+		Block
+	</type>
+
+	<description>
+		Block is basic unit in minecraft. It is 3D object that can be placed in world.
+	</description>
+
+</mod>
+
+
+<mod>
+
+	<name>
+		RedInvisible
+	</name>
+
+	<type>
+		Block
+	</type>
+
+	<description>
+		Block is basic unit in minecraft. It is 3D object that can be placed in world.
+	</description>
+
+</mod>
+
+
+<mod>
+
+	<name>
+		GreenInvisible
+	</name>
+
+	<type>
+		Block
+	</type>
+
+	<description>
+		Block is basic unit in minecraft. It is 3D object that can be placed in world.
+	</description>
+
+</mod>
+
+
+<mod>
+
+	<name>
+		BlueInvisible
+	</name>
+
+	<type>
+		Block
+	</type>
+
+	<description>
+		Block is basic unit in minecraft. It is 3D object that can be placed in world.
+	</description>
+
+</mod>
+
+
+<mod>
+
+	<name>
+		OrangeInvisible
+	</name>
+
+	<type>
+		Block
+	</type>
+
+	<description>
+		Block is basic unit in minecraft. It is 3D object that can be placed in world.
+	</description>
+
+</mod>
+
+
+<mod>
+
+	<name>
+		COverlay
+	</name>
+
+	<type>
+		Overlay
+	</type>
+
+	<description>
+		Ingame overlay adds additional GUI overlay that can be seen in the ingame inteface.
+	</description>
+
+</mod>
+
+
+<mod>
+
+	<name>
+		ClearBlocks
+	</name>
+
+	<type>
+		Command
+	</type>
+
+	<description>
+		Command is set of text that triggers action when user types it into chat.
+	</description>
+
+</mod>
+
+
+<mod>
+
+	<name>
+		Test
+	</name>
+
+	<type>
+		Block
+	</type>
+
+	<description>
+		Block is basic unit in minecraft. It is 3D object that can be placed in world.
+	</description>
+
+</mod>
+
+
+<mod>
+
+	<name>
+		LogBlocks
+	</name>
+
+	<type>
+		Command
+	</type>
+
+	<description>
+		Command is set of text that triggers action when user types it into chat.
+	</description>
+
+</mod>
+
+
+<mod>
+
+	<name>
+		ExperimentalConditions
+	</name>
+
+	<type>
+		Command
+	</type>
+
+	<description>
+		Command is set of text that triggers action when user types it into chat.
+	</description>
+
+</mod>
+
+
+</mods>

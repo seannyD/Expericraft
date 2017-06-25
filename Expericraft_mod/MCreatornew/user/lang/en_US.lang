@@ -1,0 +1,11 @@
+#Lang file was made using MCreator
+#Sun Jun 25 10:03:09 BST 2017
+tile.BlueInvisible.name=blue
+tile.OrageGround.name=orange
+tile.OrangeInvisible.name=orange
+tile.BlueGround.name=blue
+tile.RedInvisible.name=red
+tile.Test.name=test
+tile.RedGround.name=red
+tile.GreenGround.name=green
+tile.GreenInvisible.name=green

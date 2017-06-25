@@ -1,0 +1,24 @@
+<html>
+<center><big>How to use events</big></center><br>
+Coordinates x, y and z represent the location of the event. Current location is stored in variables i, j and k. If you set x to i, y to j and z to k, event result will happen on the location of the event.
+<br><center><img width=170 height=156 src="[guires]/html/coord.png"></center><br>
+You can use mathematical operations in x, y and z text fields. For example:<br>
+<img src="[guires]/html/ex1.png"><br>
+will place dirt block 6 blocks above location of the event. Here is another more advanced example:<br><br>
+<b>y:</b><code> j + (int)(Math.random()*10)</code><br><br>
+This event result will take place 0 to 10 blocks above location of event. We achieved this using this part of code:<br><br>
+<code>(int)(Math.random()*10)</code><br><br>
+You can also change the range of random values. The following example will return random number from 5 to 10:<br><br>
+<code>(int)(Math.random()*5)+5</code>
+<br><br>You can use other mathematical expressions such as: +, -, * and /.<br>You can also for division modulus:<br><br>
+<code>3%2</code><br><br>
+This would give you 1 because 3/2 = 1 + (1 modulus)<br><br>
+You can find more functions similar to Math.random() on <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Math.html">this</a> website.<br>
+List of all Java operators can be found on <a href="http://docs.oracle.com/javase/tutorial/java/nutsandbolts/opsummary.html">this</a> website.<br><br>
+<center><big>Examples</big></center><br>
+<br><img src="[guires]/html/ex2.png"><br><br>
+This event result will spawn explosion on the location of the event with the power of explosion based on the height of event location (e.g. on height 120, the explosion will have a power of 120*4 - such power of explosion is too big for most computers so this expression is only theoretical).<br>
+<br><img src="[guires]/html/ex3.png"><br><br><br>
+This example event result will cause entity that triggered the event to be hurt based on the half of the current height (e.g. if the entity would be at height 50, the event result will decrease entity's health for 25).<br>
+<br>More help on events can be found on <a href="http://www.pylo.si/mcreator/wiki/index.php?title=Usage_of_events">MCreator's Wiki</a>.
+</html>

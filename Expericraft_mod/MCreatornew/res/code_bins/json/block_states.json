@@ -1,0 +1,5 @@
+{
+    "variants": {
+        "%variant%": { "model": "testenvironmentmod:%name%" }
+    }
+}

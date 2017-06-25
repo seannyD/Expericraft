@@ -1,0 +1,11 @@
+{
+    "forge_marker": 1,
+    "defaults": {
+        "model": "testenvironmentmod:%objfile%"
+    },
+    "variants": {
+    "inventory": [{
+      "transform": "forge:default-tool"
+    }]
+	}
+}

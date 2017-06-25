@@ -1,0 +1,6 @@
+{
+    "parent": "testenvironmentmod:block/%model%",
+    "textures": {
+        %txname%
+    }
+}

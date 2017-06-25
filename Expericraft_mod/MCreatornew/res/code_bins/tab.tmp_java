@@ -1,0 +1,76 @@
+import net.minecraftforge.fml.common.*;
+import net.minecraftforge.fml.common.discovery.*;
+import net.minecraftforge.fml.common.discovery.asm.*;
+import net.minecraftforge.fml.common.event.*;
+import net.minecraftforge.fml.common.functions.*;
+import net.minecraftforge.fml.common.network.*;
+import net.minecraftforge.fml.common.registry.*;
+import net.minecraftforge.fml.common.toposort.*;
+import net.minecraftforge.fml.common.versioning.*;
+import net.minecraftforge.fml.relauncher.*;
+import net.minecraftforge.fml.server.*;
+import net.minecraft.block.*;
+import net.minecraft.block.material.*;
+import net.minecraft.command.*;
+import net.minecraft.creativetab.*;
+import net.minecraft.dispenser.*;
+import net.minecraft.enchantment.*;
+import net.minecraft.entity.*;
+import net.minecraft.entity.ai.*;
+import net.minecraft.entity.boss.*;
+import net.minecraft.entity.effect.*;
+import net.minecraft.entity.item.*;
+import net.minecraft.entity.monster.*;
+import net.minecraft.entity.passive.*;
+import net.minecraft.entity.player.*;
+import net.minecraft.entity.projectile.*;
+import net.minecraft.inventory.*;
+import net.minecraft.item.*;
+import net.minecraft.item.crafting.*;
+import net.minecraft.nbt.*;
+import net.minecraft.network.*;
+import net.minecraft.network.rcon.*;
+import net.minecraft.pathfinding.*;
+import net.minecraft.potion.*;
+import net.minecraft.profiler.*;
+import net.minecraft.server.*;
+import net.minecraft.server.dedicated.*;
+import net.minecraft.server.gui.*;
+import net.minecraft.server.integrated.*;
+import net.minecraft.server.management.*;
+
+import net.minecraft.util.*;
+import net.minecraft.world.*;
+import net.minecraftforge.oredict.*;
+import net.minecraft.init.*;
+import java.util.Random;
+
+public class mcreator_%name% {
+
+public static Object instance;
+
+public static CreativeTabs tab = new CreativeTabs("tab%name%") {
+                @SideOnly(Side.CLIENT)
+				@Override
+                public ItemStack getTabIconItem(){
+                        return %icon%;
+                }
+				%methods%
+        }%opt%;
+
+public mcreator_%name%(){}
+
+public void load(FMLInitializationEvent event){
+}
+
+public void registerRenderers(){}
+public void generateNether(World world, Random random, int chunkX, int chunkZ){}
+public void generateSurface(World world, Random random, int chunkX, int chunkZ){}
+public int addFuel(ItemStack fuel){
+	return 0;
+}
+public void serverLoad(FMLServerStartingEvent event){}
+public void preInit(FMLPreInitializationEvent event){}
+
+
+}
