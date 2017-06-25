@@ -1,5 +1,7 @@
 # Expericraft
 
+A Minecraft mod for running communication game experiments.
+
 
 ## Progress
 
@@ -38,6 +40,8 @@ Starts logging blocks in the given filename (should not include folder path).
 
 ## TODO
 
+-  Add more block colours
+-  Copy world to new world (or make new one)
 -  Set time to constantly noon
 -  Reset player locations and give appropriate blocks
 -  Infinite supply of blocks?
