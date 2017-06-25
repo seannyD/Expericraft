@@ -1,26 +1,3 @@
-# Problems
-
-Mods are made with MCreator.
-
-modid.jar: first mod.  Built for minecraft 1.8.9.  
-Expericraft4.jar: new mod.  Built for minecraft 1.11.2.
-
-Mod isn't working on the Spigot server.  Blocks appear but then dissappear immediately.  Prob because Spigot and Forge are different 
-
-Mod will work on single player, then we can direct connect.  But this won't let us track block placement or clear blocks with a script.  And we can't protect the grass etc.
-
-We can use the old setup, but then players can see what they're carrying.
-
-Forge server isn't working with the mod for some reason.
-
-Solution: use pure forge mod in single player mode, writing block log to local file.  Current MCreator class GreeBlockinvisible implements this, (need to include log of deleting, and duplicating entries for some reason?).  But I'm having trouble compiling the jar file.  Maybe the MCreator grade compile actually makes one: MCreatornew/forge/build/libs/modid-1.0.jar
-
-Can just run: ./gradlew clean build
-
-I've now re-written the mod in MCreator
-
-
-
 # Installation
 
 ## Install java
