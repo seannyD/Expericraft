@@ -223,4 +223,225 @@
 </mod>
 
 
+<mod>
+
+	<name>
+		CyanGround
+	</name>
+
+	<type>
+		Block
+	</type>
+
+	<description>
+		Block is basic unit in minecraft. It is 3D object that can be placed in world.
+	</description>
+
+</mod>
+
+
+<mod>
+
+	<name>
+		YellowGround
+	</name>
+
+	<type>
+		Block
+	</type>
+
+	<description>
+		Block is basic unit in minecraft. It is 3D object that can be placed in world.
+	</description>
+
+</mod>
+
+
+<mod>
+
+	<name>
+		CyanInvisible
+	</name>
+
+	<type>
+		Block
+	</type>
+
+	<description>
+		Block is basic unit in minecraft. It is 3D object that can be placed in world.
+	</description>
+
+</mod>
+
+
+<mod>
+
+	<name>
+		YellowInvisible
+	</name>
+
+	<type>
+		Block
+	</type>
+
+	<description>
+		Block is basic unit in minecraft. It is 3D object that can be placed in world.
+	</description>
+
+</mod>
+
+
+<mod>
+
+	<name>
+		BlackInvisible
+	</name>
+
+	<type>
+		Block
+	</type>
+
+	<description>
+		Block is basic unit in minecraft. It is 3D object that can be placed in world.
+	</description>
+
+</mod>
+
+
+<mod>
+
+	<name>
+		PinkInvisible
+	</name>
+
+	<type>
+		Block
+	</type>
+
+	<description>
+		Block is basic unit in minecraft. It is 3D object that can be placed in world.
+	</description>
+
+</mod>
+
+
+<mod>
+
+	<name>
+		WhiteInvisible
+	</name>
+
+	<type>
+		Block
+	</type>
+
+	<description>
+		Block is basic unit in minecraft. It is 3D object that can be placed in world.
+	</description>
+
+</mod>
+
+
+<mod>
+
+	<name>
+		BrownInvisible
+	</name>
+
+	<type>
+		Block
+	</type>
+
+	<description>
+		Block is basic unit in minecraft. It is 3D object that can be placed in world.
+	</description>
+
+</mod>
+
+
+<mod>
+
+	<name>
+		BlackGround
+	</name>
+
+	<type>
+		Block
+	</type>
+
+	<description>
+		Block is basic unit in minecraft. It is 3D object that can be placed in world.
+	</description>
+
+</mod>
+
+
+<mod>
+
+	<name>
+		PinkGround
+	</name>
+
+	<type>
+		Block
+	</type>
+
+	<description>
+		Block is basic unit in minecraft. It is 3D object that can be placed in world.
+	</description>
+
+</mod>
+
+
+<mod>
+
+	<name>
+		WhiteGround
+	</name>
+
+	<type>
+		Block
+	</type>
+
+	<description>
+		Block is basic unit in minecraft. It is 3D object that can be placed in world.
+	</description>
+
+</mod>
+
+
+<mod>
+
+	<name>
+		BrownGround
+	</name>
+
+	<type>
+		Block
+	</type>
+
+	<description>
+		Block is basic unit in minecraft. It is 3D object that can be placed in world.
+	</description>
+
+</mod>
+
+
+<mod>
+
+	<name>
+		TestOverlay
+	</name>
+
+	<type>
+		Overlay
+	</type>
+
+	<description>
+		Ingame overlay adds additional GUI overlay that can be seen in the ingame inteface.
+	</description>
+
+</mod>
+
+
 </mods>

@@ -1,11 +1,27 @@
 #Lang file was made using MCreator
-#Sun Jun 25 10:03:09 BST 2017
-tile.BlueInvisible.name=blue
-tile.OrageGround.name=orange
-tile.OrangeInvisible.name=orange
-tile.BlueGround.name=blue
+#Tue Jun 27 21:59:52 BST 2017
 tile.RedInvisible.name=red
-tile.Test.name=test
-tile.RedGround.name=red
+tile.BlueGround.name=blue
+tile.OrangeInvisible.name=orange
+tile.BlueInvisible.name=blue
+tile.PinkGround.name=pink
+tile.WhiteBlock.name=white
 tile.GreenGround.name=green
+tile.BrownInvisible.name=brown
+tile.BrownGround.name=brown
+tile.YellowGround.name=yellow
+tile.WhiteInvisible.name=white
+tile.BlackGround.name=black
+tile.OrageGround.name=orange
+tile.CyanInvisible.name=cyan
+tile.PinkBlock.name=pink
+tile.RedGround.name=red
 tile.GreenInvisible.name=green
+tile.CyanGround.name=cyan
+tile.Test.name=test
+tile.BlackInvisible.name=black
+tile.BrownBlock.name=brown
+tile.PinkInvisible.name=pink
+tile.WhiteGround.name=white
+tile.BlackBlock.name=black
+tile.YellowInvisible.name=yellow

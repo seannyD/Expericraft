@@ -25,14 +25,23 @@ Then look for jar file in: MCreatornew/forge/build/libs/
 
 Current features:
 
--  New coloured blocks (Red, Green, Blue, Orange)
+-  New coloured blocks (Red, Green, Blue, Orange, Cyan, Yellow, Black, Pink, White, Brown)
 -  Other players can't see which blocks their partners are carrying (invisible blocks are carried and when placed are replaced immediately with "Ground" blocks).
 -  Logging of block placement and deletion to local file.
 -  Set experimental mode on.
 
-### /experiment
+### /experiment [off]
 
-Sets weather to clear, time to noon, mode to survival, difficulty to peaceful and kills all mobs within a radius.
+Has the following effects
+
+-  Weather to clear
+-  Time to noon
+-  Mode to survival
+-  Difficulty to peaceful
+-  Kills all mobs within a radius
+-  Sets hardness very high for oak fences and gates, grass and dirt.
+
+"/experiment off" will turn off the experimental settings.
 
 ### /logblocks [filename]
 
@@ -40,12 +49,11 @@ Starts logging blocks in the given filename (should not include folder path).
 
 ## TODO
 
--  Add more block colours
+
 -  Copy world to new world (or make new one)
 -  Set time to constantly noon
 -  Reset player locations and give appropriate blocks
 -  Infinite supply of blocks?
--  Make "strong" fences, ground, stairs etc.
 -  Update run instructions
 -  Update block designs
 -  Make checklist
