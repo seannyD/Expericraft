@@ -47,12 +47,18 @@ Has the following effects
 
 Starts logging blocks in the given filename (should not include folder path).
 
+### /clearblocks
+
+Clears all mod blocks
+
 ## TODO
 
 
 -  Copy world to new world (or make new one)
+-  Surround area with cobblestone so that grass doesn't grow.
+-  /clearblocks shouldn't necessarily clear blocks used as position markers (black and white) [WRITTEN: NEED TO TEST].
 -  Set time to constantly noon
--  Reset player locations and give appropriate blocks
+-  Reset player locations and give appropriate blocks (use an in-game command block)
 -  Infinite supply of blocks?
 -  Update run instructions
 -  Update block designs
