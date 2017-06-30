@@ -1,0 +1,6 @@
+{
+    "parent": "block/cube",
+    "textures": {
+        "up": "blocks/greenblock","down": "blocks/greenblock","north": "blocks/greenblock","east": "blocks/greenblock","south": "blocks/greenblock","west": "blocks/greenblock","particle": "blocks/greenblock"
+    }
+}
