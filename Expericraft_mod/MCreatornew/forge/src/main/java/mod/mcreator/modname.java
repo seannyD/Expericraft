@@ -1,4 +1,4 @@
-
+package mod.mcreator;
 
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.common.registry.GameRegistry;
@@ -24,17 +24,17 @@ import net.minecraft.entity.player.EntityPlayer;
 
 import java.util.Random;
 
-@Mod(modid = TestEnvironmentMod.MODID, version = TestEnvironmentMod.VERSION)
-public class TestEnvironmentMod implements IFuelHandler, IWorldGenerator {
+@Mod(modid = modname.MODID, version = modname.VERSION)
+public class modname implements IFuelHandler, IWorldGenerator {
 
-	public static final String MODID = "testenvironmentmod";
-	public static final String VERSION = "1.0";
+	public static final String MODID = "modname";
+	public static final String VERSION = "1.0.0";
 
-	@SidedProxy(clientSide = "mod.mcreator.ClientProxyTestEnvironmentMod", serverSide = "mod.mcreator.CommonProxyTestEnvironmentMod")
-	public static CommonProxyTestEnvironmentMod proxy;
+	@SidedProxy(clientSide = "mod.mcreator.ClientProxymodname", serverSide = "mod.mcreator.CommonProxymodname")
+	public static CommonProxymodname proxy;
 
 	@Instance(MODID)
-	public static TestEnvironmentMod instance;
+	public static modname instance;
 
 	mcreator_redGround mcreator_0 = new mcreator_redGround();
 	mcreator_blueGround mcreator_1 = new mcreator_blueGround();
@@ -245,9 +245,9 @@ public class TestEnvironmentMod implements IFuelHandler, IWorldGenerator {
 		GameRegistry.registerFuelHandler(this);
 		GameRegistry.registerWorldGenerator(this, 1);
 		if (event.getSide() == Side.CLIENT) {
-			OBJLoader.INSTANCE.addDomain("testenvironmentmod");
+			OBJLoader.INSTANCE.addDomain("modname");
 		}
-		MinecraftForge.EVENT_BUS.register(new mcreator_GlobalEventsTestEnvironmentMod());
+		MinecraftForge.EVENT_BUS.register(new mcreator_GlobalEventsmodname());
 		NetworkRegistry.INSTANCE.registerGuiHandler(this, new GuiHandler());
 		mcreator_0.load(event);
 		mcreator_1.load(event);
