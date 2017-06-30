@@ -1,15 +1,15 @@
 [
 {
-  "modid": "modname",
-  "name": "Mod Name",
-  "description": "Enter short description here",
-  "version": "1.0.0",
+  "modid": "expericraft",
+  "name": "Expericraft",
+  "description": "Expericraft",
+  "version": "1.0.1",
   "credits": "Created using mod maker MCreator",
   "logoFile": "/logo.png",
   "mcversion": "1.11.2",
   "url": "https://mcreator.pylo.co/about/",
   "updateUrl": "",
-  "authorList": [ "sgroberts" , "MCreator" ],
+  "authorList": [ "sgrobertsx" , "MCreator" ],
   "parent": "",
   "screenshots": [],
   "dependencies": [

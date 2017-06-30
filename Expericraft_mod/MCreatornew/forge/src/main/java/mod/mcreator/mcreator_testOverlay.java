@@ -1,4 +1,4 @@
-package mod.mcreator;
+
 
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.fml.common.eventhandler.EventPriority;
@@ -42,8 +42,8 @@ public class mcreator_testOverlay {
 				int x = i;
 				int y = j;
 				int z = k;
-				MinecraftServer server = FMLCommonHandler.instance().getMinecraftServerInstance();
-				World world = server.worlds[0];
+				//MinecraftServer server = FMLCommonHandler.instance().getMinecraftServerInstance();
+				//World world = server.worlds[0];
 
 				if (0 == 1) {
 

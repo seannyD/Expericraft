@@ -1,4 +1,4 @@
-package mod.mcreator;
+
 
 public class ClientProxyTestEnvironmentMod extends CommonProxyTestEnvironmentMod {
 

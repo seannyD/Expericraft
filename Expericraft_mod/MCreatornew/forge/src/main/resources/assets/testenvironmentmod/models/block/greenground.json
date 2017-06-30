@@ -1,6 +1,0 @@
-{
-    "parent": "block/cube_all",
-    "textures": {
-        "all": "blocks/g_ground","particle": "blocks/g_ground"
-    }
-}

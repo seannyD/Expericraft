@@ -1,4 +1,4 @@
-package mod.mcreator;
+
 
 import net.minecraftforge.fml.common.event.FMLServerStartingEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
