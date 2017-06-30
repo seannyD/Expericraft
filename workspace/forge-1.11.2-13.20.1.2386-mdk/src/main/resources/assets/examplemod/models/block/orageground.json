@@ -1,0 +1,6 @@
+{
+    "parent": "block/cube_all",
+    "textures": {
+        "all": "blocks/o_ground","particle": "blocks/o_ground"
+    }
+}

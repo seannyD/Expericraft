@@ -62,8 +62,7 @@ public class mcreator_pinkInvisible {
 
 	static {
 
-		block = (BlockPinkInvisible) (new BlockPinkInvisible().setHardness(2.0F).setResistance(10.0F).setLightLevel(0.0F)
-				.setUnlocalizedName("PinkInvisible").setLightOpacity(0).setCreativeTab(CreativeTabs.BUILDING_BLOCKS));
+		block = (BlockPinkInvisible) (new BlockPinkInvisible().setHardness(2.0F).setResistance(10.0F).setUnlocalizedName("PinkInvisible").setCreativeTab(CreativeTabs.BUILDING_BLOCKS));
 		block.setHarvestLevel("pickaxe", 4);
 	}
 
