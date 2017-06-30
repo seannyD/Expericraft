@@ -107,7 +107,7 @@ public class mcreator_cOverlay {
 	}
 
 	public int addFuel(ItemStack fuel) {
-		return 0;
+		return 0; 
 	}
 
 	public void serverLoad(FMLServerStartingEvent event) {
