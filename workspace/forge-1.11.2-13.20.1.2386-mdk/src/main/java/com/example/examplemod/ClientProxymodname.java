@@ -17,6 +17,7 @@ public class ClientProxymodname extends CommonProxymodname {
 		ins.mcreator_10.registerRenderers();
 		ins.mcreator_11.registerRenderers();
 		ins.mcreator_12.registerRenderers();
+		ins.mcreator_setup.registerRenderers();
 		ins.mcreator_13.registerRenderers();
 		ins.mcreator_14.registerRenderers();
 		ins.mcreator_15.registerRenderers();

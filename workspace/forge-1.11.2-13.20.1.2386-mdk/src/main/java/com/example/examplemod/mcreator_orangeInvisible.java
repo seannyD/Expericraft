@@ -57,7 +57,7 @@ public class mcreator_orangeInvisible {
 	public void load(FMLInitializationEvent event) {
 		if (event.getSide() == Side.CLIENT) {
 			Minecraft.getMinecraft().getRenderItem().getItemModelMesher()
-					.register(Item.getItemFromBlock(block), 0, new ModelResourceLocation("expericraft:orangeinvisible", "inventory"));
+					.register(Item.getItemFromBlock(block), 0, new ModelResourceLocation("examplemod:orangeinvisible", "inventory"));
 		}
 	}
 

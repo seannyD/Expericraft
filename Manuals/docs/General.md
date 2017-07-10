@@ -4,6 +4,8 @@
 
 Windows: Download JRE 8.
 
+http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html
+
 Mac: 
 see [https://gist.github.com/johan/10590467](https://gist.github.com/johan/10590467)
 
@@ -56,31 +58,15 @@ Now in the minecraft directory there should be a folder called 'mods'.  Copy the
 
 Run minecraft again, making sure to run the Forge profile.  Now in the main minecraft menu there is an option "Mods".  If you click it you should see a number of mods including one called "TestEnvironmentMod"
 
-# Installation on the server computer
+### Add the world files
 
-TODO: No need for server now!
+Download the experiment world folder "ExperimentWorld1" from:
 
-## Spigot server
+[https://github.com/seannyD/Expericraft/tree/master/worlds](https://github.com/seannyD/Expericraft/tree/master/worlds)
 
-Install a Spigot server on the server computer (not needed on the player computers).
+You can download just this folder as a zip file using:
 
-We're using spigot 1.11.2.  see [https://www.spigotmc.org/wiki/buildtools/](https://www.spigotmc.org/wiki/buildtools/)
+[https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/seannyD/Expericraft/tree/master/worlds/ExperimentWorld1](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/seannyD/Expericraft/tree/master/worlds/ExperimentWorld1)
 
-Download BuildTools.jar to the folder where you want to store the server files.  Because our mod uses Minecraft 1.11, you must run:
 
-`java -jar BuildTools.jar --rev 1.11.2`
-
-## Add a spigot executable file
-
-Add a file called "runSpigot.sh" in the top Spigot directory with the following code (adjusting for the name of the spigot jar):
-
-```
-#!/bin/sh
-
-cd "$( dirname "$0" )"
-java -Xms512M -Xmx1024M -XX:MaxPermSize=128M -jar spigot-1.11.jar
-```
-
-Make this an executable file (e.g. on mac/linux : `chmod +x ./runSpigot.sh`).
-
-You can now start the server in a command prompt using `./runSpigot.sh`.
+Copy the folder ExperimentWorld1 to the minecraft folder "saves": `C:/Users/ENCAP/AppData/Roaming/.minecraft/saves/`.  

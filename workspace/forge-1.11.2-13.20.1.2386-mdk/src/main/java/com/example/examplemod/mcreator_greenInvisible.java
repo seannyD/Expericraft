@@ -57,7 +57,7 @@ public class mcreator_greenInvisible {
 	public void load(FMLInitializationEvent event) {
 		if (event.getSide() == Side.CLIENT) {
 			Minecraft.getMinecraft().getRenderItem().getItemModelMesher()
-					.register(Item.getItemFromBlock(block), 0, new ModelResourceLocation("expericraft:greeninvisible", "inventory"));
+					.register(Item.getItemFromBlock(block), 0, new ModelResourceLocation("examplemod:greeninvisible", "inventory"));
 		}
 	}
 
@@ -81,7 +81,7 @@ public class mcreator_greenInvisible {
 		boolean red = false;
 
 		protected BlockGreenInvisible() {
-			super(Material.GROUND);
+			super(Material.GLASS);
 
 			setSoundType(SoundType.WOOD);
 

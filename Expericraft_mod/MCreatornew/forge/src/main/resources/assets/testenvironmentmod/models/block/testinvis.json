@@ -1,0 +1,6 @@
+{
+    "parent": "block/cube",
+    "textures": {
+        "up": "blocks/invisible","down": "blocks/invisible","north": "blocks/invisible","east": "blocks/invisible","south": "blocks/invisible","west": "blocks/invisible","particle": "blocks/invisible"
+    }
+}

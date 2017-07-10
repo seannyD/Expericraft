@@ -1,0 +1,4 @@
+red   red
+white green
+brown orange
+gray  blue

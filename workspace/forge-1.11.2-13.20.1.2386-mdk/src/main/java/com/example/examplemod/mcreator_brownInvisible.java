@@ -56,7 +56,7 @@ public class mcreator_brownInvisible {
 	public void load(FMLInitializationEvent event) {
 		if (event.getSide() == Side.CLIENT) {
 			Minecraft.getMinecraft().getRenderItem().getItemModelMesher()
-					.register(Item.getItemFromBlock(block), 0, new ModelResourceLocation("expericraft:browninvisible", "inventory"));
+					.register(Item.getItemFromBlock(block), 0, new ModelResourceLocation("examplemod:browninvisible", "inventory"));
 		}
 	}
 

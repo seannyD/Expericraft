@@ -1,6 +1,24 @@
 {
-    "parent": "block/cube_all",
+    "parent": "block/cube",
     "textures": {
-        "all": "blocks/invisible","particle": "blocks/invisible"
+        "down": "examplemod:blocks/invisible",
+         "up": "examplemod:blocks/invisible",
+      "north": "examplemod:blocks/invisible",
+      "south": "examplemod:blocks/invisible",
+       "west": "examplemod:blocks/invisible",
+       "east": "examplemod:blocks/invisible",
+       "particle": "examplemod:blocks/invisible"
+    },
+    "display": {
+        "thirdperson": {
+            "rotation": [ 0, 0, 0 ],
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 0.1, 0.1, 0.1 ]
+        },
+        "firstperson": {
+            "rotation": [ 0, 0, 0 ],
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 0.1, 0.1, 0.1 ]
+        }
     }
 }

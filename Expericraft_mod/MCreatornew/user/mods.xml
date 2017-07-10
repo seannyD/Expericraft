@@ -461,4 +461,21 @@
 </mod>
 
 
+<mod>
+
+	<name>
+		TestInvis
+	</name>
+
+	<type>
+		Block
+	</type>
+
+	<description>
+		Block is basic unit in minecraft. It is 3D object that can be placed in world.
+	</description>
+
+</mod>
+
+
 </mods>

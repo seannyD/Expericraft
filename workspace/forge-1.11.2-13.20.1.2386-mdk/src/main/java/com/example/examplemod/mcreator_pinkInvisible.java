@@ -56,7 +56,7 @@ public class mcreator_pinkInvisible {
 	public void load(FMLInitializationEvent event) {
 		if (event.getSide() == Side.CLIENT) {
 			Minecraft.getMinecraft().getRenderItem().getItemModelMesher()
-					.register(Item.getItemFromBlock(block), 0, new ModelResourceLocation("expericraft:pinkinvisible", "inventory"));
+					.register(Item.getItemFromBlock(block), 0, new ModelResourceLocation("examplemod:pinkinvisible", "inventory"));
 		}
 	}
 

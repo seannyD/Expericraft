@@ -67,6 +67,7 @@ public class ExampleMod implements IFuelHandler, IWorldGenerator {
 	mcreator_test mcreator_10 = new mcreator_test();
 	mcreator_logBlocks mcreator_11 = new mcreator_logBlocks();
 	mcreator_experimentalConditions mcreator_12 = new mcreator_experimentalConditions();
+	mcreator_setup mcreator_setup = new mcreator_setup();
 	mcreator_cyanGround mcreator_13 = new mcreator_cyanGround();
 	mcreator_yellowGround mcreator_14 = new mcreator_yellowGround();
 	mcreator_cyanInvisible mcreator_15 = new mcreator_cyanInvisible();
@@ -280,6 +281,7 @@ public class ExampleMod implements IFuelHandler, IWorldGenerator {
 		mcreator_10.load(event);
 		mcreator_11.load(event);
 		mcreator_12.load(event);
+		mcreator_setup.load(event);
 		mcreator_13.load(event);
 		mcreator_14.load(event);
 		mcreator_15.load(event);
@@ -313,6 +315,7 @@ public class ExampleMod implements IFuelHandler, IWorldGenerator {
 		mcreator_10.serverLoad(event);
 		mcreator_11.serverLoad(event);
 		mcreator_12.serverLoad(event);
+		mcreator_setup.serverLoad(event);
 		mcreator_13.serverLoad(event);
 		mcreator_14.serverLoad(event);
 		mcreator_15.serverLoad(event);
@@ -344,6 +347,7 @@ public class ExampleMod implements IFuelHandler, IWorldGenerator {
 		mcreator_10.instance = this.instance;
 		mcreator_11.instance = this.instance;
 		mcreator_12.instance = this.instance;
+		mcreator_setup.instance = this.instance;
 		mcreator_13.instance = this.instance;
 		mcreator_14.instance = this.instance;
 		mcreator_15.instance = this.instance;
@@ -371,6 +375,7 @@ public class ExampleMod implements IFuelHandler, IWorldGenerator {
 		mcreator_10.preInit(event);
 		mcreator_11.preInit(event);
 		mcreator_12.preInit(event);
+		mcreator_setup.preInit(event);
 		mcreator_13.preInit(event);
 		mcreator_14.preInit(event);
 		mcreator_15.preInit(event);

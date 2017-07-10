@@ -1,31 +1,45 @@
 # Fixing problems
 
+## I need a particular block type
+
+Press 'e' (or maybe 'i') to open the inventory.  Click and drag any of the blocks into your inventory on the bottom.  The special blocks for this expeirment are at the bottom of the "building blocks" tab (first tab).
+
+
 ## In Minecraft, when trying to use the console, I can't type some characters (a, c)
 
-Minecraft thinks the apple command button is being held down.  Press the apple command key on its own, then try typing again.
+Minecraft thinks the command button is being held down.  Press the apple command key or the windows control key or the windows key on its own, then try typing again.
 
 
 ## Changing to creative mode
 
-First you need to give permission for the player to use the console commands.  In the command prompt where the server is running, type `op` followed by the name of the player:
-
-`op Seanny_D`
-
-or
-
-`op LizIrv`
-
-The player can now type a forward slash to get the console, then 
+Player A can switch to creative mode using the command line:
 
 `/gamemode creative`  To set to creative mode.
 
 `/gamemode survival` To set back to normal.
 
+But player B doesn't have permission to do this.  Instead, switch to experiment mode:
+
+`/experiment`
+
+And that will put the player into creative mode.
+
 
 ## Server commands
 
-`difficulty peaceful` 
+`/difficulty peaceful` 
 
-`clear LizIrv`
+`/clear LizIrv`  Clear the inventory of LizIrv
 
-`give LizIrv minecraft:wool 64 0`
+`/clear @a` Clear the inventory of all participants.
+
+`/give LizIrv minecraft:wool 64 0`  Give LizIrv wool
+
+`/give @p examplemod:greeninvisible 64`  Give me green invisible block
+`/give @p examplemod:orangeinvisible 64`
+
+`/give @p examplemod:redinvisible 64`
+`/give @p examplemod:blueinvisible 64`
+
+`/tp @p -42 73 -14` Teleport me to A's starting point
+`/tp @p -42 73 -6` Teleport me to B's starting point

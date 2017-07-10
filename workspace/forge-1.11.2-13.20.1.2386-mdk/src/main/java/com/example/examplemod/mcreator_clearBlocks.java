@@ -89,7 +89,7 @@ public class mcreator_clearBlocks {
 			int y = j;
 			int z = k;
 
-               int h_range = 200; // radius
+               int h_range = 400; // radius
                int v_range = 6; // radius
                
 

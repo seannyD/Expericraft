@@ -154,7 +154,7 @@ public class mcreator_experimentalConditions {
                     //world.scheduleUpdate(null, null, 10000);    
      
                     // kill all mobs in range
-                    int h_range = 200;
+                    int h_range = 400;
                     int v_range = 30;
      
                     AxisAlignedBB range = new AxisAlignedBB(x - h_range, y - v_range, z - h_range, x + h_range, y + v_range, z + h_range);
@@ -178,6 +178,9 @@ public class mcreator_experimentalConditions {
                    Blocks.OAK_FENCE_GATE.setHardness(200F);
                    Blocks.GRASS.setHardness(200F);
                    Blocks.DIRT.setHardness(200F);
+                   Blocks.BRICK_BLOCK.setHardness(200F);
+                   Blocks.OAK_STAIRS.setHardness(200F);
+                   Blocks.PLANKS.setHardness(200F);
               } else{
                    infiniteModBlocks = false;
                    if (entity instanceof EntityPlayer){
@@ -188,7 +191,9 @@ public class mcreator_experimentalConditions {
                    Blocks.OAK_FENCE_GATE.setHardness(2F);
                    Blocks.GRASS.setHardness(0.5F);
                    Blocks.DIRT.setHardness(0.5F);
-
+                   Blocks.BRICK_BLOCK.setHardness(2F);
+                   Blocks.OAK_STAIRS.setHardness(2F);
+                   Blocks.PLANKS.setHardness(2F);
                    //timer.cancel();
                    
               }
