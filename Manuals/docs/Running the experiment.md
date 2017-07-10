@@ -17,6 +17,8 @@ Assign participant numbers in the format WaitA1, WaitB1 or NoWaitA1, NoWaitB1 et
 
 Write the participant numbers on the questionnaires.
 
+## Connect computers to power and turn on
+
 ## Network the computers
 
 Connect the computers to the same wi-fi/LAN network.
@@ -36,7 +38,9 @@ The world will load.  Leave it for a few moments so that the world loads fully.
 
 Press Escape, then choose "Open to LAN".
 
-Make sure you choose "Game Mode: Creative", then click "Start LAN World".
+Make sure you choose **"Game Mode: Creative"** and **Cheats: On**, 
+
+Then click "Start LAN World".
 
 You will see a note at the bottom of the screen telling you the port number (a 5 digit number).  Note this down.  If you forget, go back to the game and hit the forward slash button to bring up the terminal - the number should be in the message history.
 
@@ -53,13 +57,31 @@ Click connect, and you should appear in the world next to the other player.
 
 ## Set the stage
 
-Clear the previous participants' blocks, remove mobs and cut grass.  Type the following:
+### Clear the previous participants' blocks
+
+Also remove mobs and cut grass.  Type the following:
 
 `/clearblocks`    And then hit enter.
 
 Check that the experiment area is clear and that all fences/gates etc. are correct.
 
+### Give players blocks to place
+
 Give players the right blocks and move them to the starting positions:  
+
+Go to the big square of gray stone outside the training building (on the other side to the puzzle yards).  There are a set of command blocks set up to set the players in the right position with the right blocks:
+
+![](../images/ToCommandBlocks.png)
+
+Player A is on the right, player B is on the left (these are signposted).
+
+Go up to the sign and **left click** the button on the side of the brown command block:
+
+![](../images/PressCommandBlocks.png)
+
+You should be transported to the right starting location and be given the right blocks.
+
+If that doesn't work you can try typing the commands manually:
 
 -  A gets green, orange
 
@@ -79,9 +101,19 @@ Give players the right blocks and move them to the starting positions:
 /tp @p -42 73 -14
 ```
 
-Change to experiment mode.  This kills mobs, cuts grass and sets the player's mode to survival (peaceful).  Type **on both computers**:
+If these commands don't work, you can try the following:
+
+-  Open the inventory by pressing 'e' (or 'i')
+-  Click on the first tab at the top left (building blocks)
+-  Scroll to the bottom and you'll find the expeirment blocks.  Find the blocks labelled "Green", "Blue" etc., not the blocks "GreenGround", "BlueGround" etc.
+-  Hold shift and click the block type and you'll pick up 64 blocks
+-  Click on the user's inventory (row of empty boxes at the bottom) and you'll transfer these blocks to the participant inventory.
+
+### Change to experiment mode (**on both computers**):
 
 `\experiment`
+
+(This kills mobs, cuts grass and sets the player's mode to survival, peaceful).  
 
 ## Start recording block placement
 

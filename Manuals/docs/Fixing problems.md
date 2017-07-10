@@ -1,5 +1,9 @@
 # Fixing problems
 
+## Flying
+
+In creative mode (see below), you can fly by hitting space bar twice.  Hold the space bar to rise and hold shift (crouch) to descend.
+
 ## I need a particular block type
 
 Press 'e' (or maybe 'i') to open the inventory.  Click and drag any of the blocks into your inventory on the bottom.  The special blocks for this expeirment are at the bottom of the "building blocks" tab (first tab).
