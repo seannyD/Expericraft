@@ -47,3 +47,28 @@ And that will put the player into creative mode.
 
 `/tp @p -42 73 -14` Teleport me to A's starting point
 `/tp @p -42 73 -6` Teleport me to B's starting point
+
+
+## I destroyed part of the command blocks setup
+
+### Adding a button
+
+To add a button back to the command block machine:
+
+-  go into creative mode by using
+
+`\experiment off`
+
+-  Open the inventory and put a button in your inventory slots.  The buttons are under the red power tab (red triangle), or click on the compass and search for "button".
+
+-  Go up to the orange command block nearest the stone wall.
+
+-  Crouch by holding shift
+
+-  Left click on top of the command block, and the button will be added
+
+Now you can activate the button by left-clicking it.
+
+-  Go back into experiment mode by typing
+
+`\experiment`

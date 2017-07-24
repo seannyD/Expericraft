@@ -1,6 +1,7 @@
 package com.example.examplemod;
 
 import net.minecraftforge.fml.common.event.FMLServerStartingEvent;
+
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 
@@ -30,6 +31,8 @@ import java.util.Random;
 import java.util.List;
 import java.util.Timer;
 import java.util.TimerTask;
+
+import com.example.examplemod.mcreator_greenGround.BlockGreenGround;
 
 public class mcreator_experimentalConditions {
 
@@ -124,7 +127,31 @@ public class mcreator_experimentalConditions {
                          }
                     }
                }
+               
+               // detect custom block hardness settings
+               boolean hard = false;
+               float hardness_setting = 0.8F;//2.4F;
+               if(cmd!=null){
+                   if(cmd.length>0){
+                        if(cmd[0].equals("hard")){
+                            hard = true;
+	                        if(cmd.length>1){
+	                        	try{
+	                        	hardness_setting = Float.parseFloat(cmd[1]);
+	                        	} catch(Exception e){
+	                        		var1.sendMessage(new TextComponentString("COULD NOT RECOGNISE HARDNESS VALUE, setting to default hard ..."));
+	                        		hardness_setting = 2.4F;
+	                        	}
+	                        } else{
+	                        	// 2.4 by default = about 3.5 seconds to break
+	                        	hardness_setting = 2.4F;
+	                        }
+                        }
+                   }
+              }
 
+               
+               // APPLY SETTINGS
                if(setOn){
 
                     infiniteModBlocks = true;
@@ -164,7 +191,7 @@ public class mcreator_experimentalConditions {
                       if (!moblist.isEmpty()) {
                           
                           for (Entity entry : moblist) {
-                              var1.sendMessage(new TextComponentString("mob: " + entry.getName()));
+                              //var1.sendMessage(new TextComponentString("mob: " + entry.getName()));
                               if (!(entry instanceof EntityCreature)) {
                                   continue;
                               }
@@ -181,6 +208,28 @@ public class mcreator_experimentalConditions {
                    Blocks.BRICK_BLOCK.setHardness(200F);
                    Blocks.OAK_STAIRS.setHardness(200F);
                    Blocks.PLANKS.setHardness(200F);
+                   
+                   // Set black and white blocks to hard
+                   ExampleMod.instance.mcreator_21.block.setHardness(200F);
+                   ExampleMod.instance.mcreator_23.block.setHardness(200F);
+                   
+                   // Set custom block hardness
+                   if(hard){
+                	   var1.sendMessage(new TextComponentString("Setting custom blocks to HARD : " + String.valueOf(hardness_setting)));
+                   } else{
+                	   var1.sendMessage(new TextComponentString("Setting custom blocks to SOFT : " + String.valueOf(hardness_setting)));
+                   }
+            	   ExampleMod.instance.mcreator_0.block.setHardness(hardness_setting);   
+            	   ExampleMod.instance.mcreator_1.block.setHardness(hardness_setting);
+            	   ExampleMod.instance.mcreator_2.block.setHardness(hardness_setting);
+            	   ExampleMod.instance.mcreator_3.block.setHardness(hardness_setting);
+            	   ExampleMod.instance.mcreator_13.block.setHardness(hardness_setting);
+            	   ExampleMod.instance.mcreator_14.block.setHardness(hardness_setting);
+            	   ExampleMod.instance.mcreator_22.block.setHardness(hardness_setting);
+            	   ExampleMod.instance.mcreator_24.block.setHardness(hardness_setting);
+                   
+                   
+                   
               } else{
                    infiniteModBlocks = false;
                    if (entity instanceof EntityPlayer){
@@ -194,6 +243,11 @@ public class mcreator_experimentalConditions {
                    Blocks.BRICK_BLOCK.setHardness(2F);
                    Blocks.OAK_STAIRS.setHardness(2F);
                    Blocks.PLANKS.setHardness(2F);
+                   
+                   // Set black and white blocks to soft
+                   ExampleMod.instance.mcreator_21.block.setHardness(0.8F);
+                   ExampleMod.instance.mcreator_23.block.setHardness(0.8F);
+                   
                    //timer.cancel();
                    
               }

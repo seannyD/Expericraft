@@ -143,7 +143,12 @@ Different for wait and nowait conditions.
 
 ### Start the screen recording
 
-Use the Open Broadcast Software.  Capture **video** and **audio from the microphone**.
+Use the Open Broadcast Software (link on the desktop OBS Studio).  Capture **video** and **audio from the microphone**.
+
+Quality is not a big issue, but we don't want the files to be massive, so keep it outputting to mpeg.
+
+-  Optimise for recording (not streaming)
+-  FPS 30
 
 ### Give them the training center instructions
 

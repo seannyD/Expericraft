@@ -10,12 +10,15 @@ import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraft.world.World;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.text.TextComponentString;
 import net.minecraft.util.math.AxisAlignedBB;
 import net.minecraft.util.EnumFacing;
 import net.minecraft.util.BlockRenderLayer;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemBlock;
 import net.minecraft.item.Item;
+import net.minecraft.entity.Entity;
+import net.minecraft.entity.EntityCreature;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
@@ -25,6 +28,7 @@ import net.minecraft.block.material.Material;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.Block;
 
+import java.util.List;
 import java.util.Random;
 
 public class mcreator_noonBlock {
@@ -35,6 +39,8 @@ public class mcreator_noonBlock {
 	public static BlockNoonBlock block;
 
 	public static Object instance;
+	
+	public static int tickCounter = 0; 
 
 	public int addFuel(ItemStack fuel) {
 		return 0;
@@ -109,10 +115,31 @@ public class mcreator_noonBlock {
 			int i = pos.getX();
 			int j = pos.getY();
 			int k = pos.getZ();
-			EntityPlayer entity = Minecraft.getMinecraft().player;
+			//EntityPlayer entity = Minecraft.getMinecraft().player;
 
-			if (true) {
-				world.setWorldTime(6000);
+			// set time to noon
+			world.setWorldTime(6000);
+			
+			// Kill all mobs
+			tickCounter += 1;
+			if(tickCounter >= 3){
+				// every 2 minutes
+				tickCounter = 0;
+                // kill all mobs in range
+                int h_range = 200;
+                int v_range = 10;
+ 
+                AxisAlignedBB range = new AxisAlignedBB(i - h_range, j - v_range, k - h_range, 
+                										i + h_range, j + v_range, k + h_range);
+                
+                //List<Entity> moblist = world.getEntitiesInAABBexcluding(entity, range, null);
+                List<EntityCreature> moblist = world.getEntitiesWithinAABB(EntityCreature.class, range);
+                  if (!moblist.isEmpty()) {
+                      for (Entity entry : moblist) {
+                          EntityCreature mob = (EntityCreature) entry;
+                          mob.setDead();
+                      }
+                  }
 			}
 
 			world.scheduleUpdate(new BlockPos(i, j, k), this, this.tickRate(world));
@@ -131,7 +158,7 @@ public class mcreator_noonBlock {
 
 		@Override
 		public int tickRate(World world) {
-			return 10;
+			return 600; // once every 30 seconds
 		}
 
 		@Override

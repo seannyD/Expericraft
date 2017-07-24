@@ -46,6 +46,8 @@ public class ExampleMod implements IFuelHandler, IWorldGenerator {
 
 	public static final String MODID = "examplemod";
 	public static final String VERSION = "1.0.0";
+	
+	
 
 	//@SidedProxy(clientSide = "mod.mcreator.ClientProxymodname", serverSide = "mod.mcreator.CommonProxymodname")
 	@SidedProxy(clientSide = "com.example.examplemod.ClientProxymodname", serverSide = "com.example.examplemod.CommonProxymodname")
@@ -58,6 +60,14 @@ public class ExampleMod implements IFuelHandler, IWorldGenerator {
 	mcreator_blueGround mcreator_1 = new mcreator_blueGround();
 	mcreator_orageGround mcreator_2 = new mcreator_orageGround();
 	mcreator_greenGround mcreator_3 = new mcreator_greenGround();
+	mcreator_pinkGround mcreator_22 = new mcreator_pinkGround();
+	mcreator_brownGround mcreator_24 = new mcreator_brownGround();	
+	mcreator_cyanGround mcreator_13 = new mcreator_cyanGround();
+	mcreator_yellowGround mcreator_14 = new mcreator_yellowGround();
+	
+	mcreator_blackGround mcreator_21 = new mcreator_blackGround();
+	mcreator_whiteGround mcreator_23 = new mcreator_whiteGround();
+	
 	mcreator_redInvisible mcreator_4 = new mcreator_redInvisible();
 	mcreator_greenInvisible mcreator_5 = new mcreator_greenInvisible();
 	mcreator_blueInvisible mcreator_6 = new mcreator_blueInvisible();
@@ -68,20 +78,18 @@ public class ExampleMod implements IFuelHandler, IWorldGenerator {
 	mcreator_logBlocks mcreator_11 = new mcreator_logBlocks();
 	mcreator_experimentalConditions mcreator_12 = new mcreator_experimentalConditions();
 	mcreator_setup mcreator_setup = new mcreator_setup();
-	mcreator_cyanGround mcreator_13 = new mcreator_cyanGround();
-	mcreator_yellowGround mcreator_14 = new mcreator_yellowGround();
+
 	mcreator_cyanInvisible mcreator_15 = new mcreator_cyanInvisible();
 	mcreator_yellowInvisible mcreator_16 = new mcreator_yellowInvisible();
 	mcreator_blackInvisible mcreator_17 = new mcreator_blackInvisible();
 	mcreator_pinkInvisible mcreator_18 = new mcreator_pinkInvisible();
 	mcreator_whiteInvisible mcreator_19 = new mcreator_whiteInvisible();
 	mcreator_brownInvisible mcreator_20 = new mcreator_brownInvisible();
-	mcreator_blackGround mcreator_21 = new mcreator_blackGround();
-	mcreator_pinkGround mcreator_22 = new mcreator_pinkGround();
-	mcreator_whiteGround mcreator_23 = new mcreator_whiteGround();
-	mcreator_brownGround mcreator_24 = new mcreator_brownGround();
+
 	mcreator_testOverlay mcreator_25 = new mcreator_testOverlay();
 	mcreator_noonBlock mcreator_26 = new mcreator_noonBlock();
+	
+	
 
 	@Override
 	public int getBurnTime(ItemStack fuel) {
