@@ -63,7 +63,7 @@ Clears all mod blocks, except black and white.
 
 ### NoonBlock
 
-When placed in the world, the NoonBlock constantly sets the time to noon (every 100 ticks).
+When placed in the world, the NoonBlock constantly sets the time to noon (every 100 ticks).  Also, about every 2 minutes it will kill all mobs within a radius of 200 blocks.
 
 If noon block is lost, then you can use command searches to destroy it:
 [EXAMPLE TODO]
