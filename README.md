@@ -2,29 +2,7 @@
 
 A Minecraft mod for running communication game experiments.
 
-
-## Progress
-
-Mods are made with MCreator for Minecraft 1.11.2
-
-Mod isn't working on the Spigot server.  Blocks appear but then dissappear immediately.  Prob because Spigot and Forge are different 
-
-Mod will work on single player, then we can direct connect.  But this won't let us track block placement or clear blocks with a script.  And we can't protect the grass etc.
-
-We can use the old setup, but then players can see what they're carrying.
-
-Forge server isn't working with the mod for some reason.
-
-Solution: Use pure forge mod in single player mode with direct sharing, writing block log to local file.  
-
-To build the mod, run:
-
-```
-./gradlew build clean
-./gradlew build
-```
-
-Then look for jar file in: MCreatornew/forge/build/libs/
+The mod jar file is available [here](modid-1.0.jar).  To install, place this file in the minecraft mod folder.
 
 ## Features
 
@@ -89,3 +67,17 @@ If noon block is lost, then you can use command searches to destroy it:
 
 
 -  Hide heart and hunger bars?  see https://gaming.stackexchange.com/questions/166790/making-hunger-bar-invisible-in-vanilla-minecraft
+
+
+# Building
+
+The mod was initially created with MCreator for Minecraft 1.11.2, then edited with eclipse.
+
+To build the mod, run:
+
+```
+./gradlew build clean
+./gradlew build
+```
+
+Then look for jar file in: workspace/forge-1.11.2-13.20.1.2386-mdk/build/libs/
