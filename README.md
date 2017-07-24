@@ -17,7 +17,12 @@ Forge server isn't working with the mod for some reason.
 
 Solution: Use pure forge mod in single player mode with direct sharing, writing block log to local file.  
 
-Can just run: ./gradlew clean build
+To build the mod, run:
+
+```
+./gradlew build clean
+./gradlew build
+```
 
 Then look for jar file in: MCreatornew/forge/build/libs/
 
