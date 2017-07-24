@@ -45,7 +45,7 @@ Current features:
 -  Sets the black and white blocks to very hard.
 -  Sets the rest of the custom blocks to soft (value 0.8, takes about 1.25 seconds to break by hand)
 
-`\experiment hard` will do all of the above, and set the custom blocks (except white and black) to a hardness of 2.4 (takes about 3.5 seconds to break by hand).  You can enter a custom hardness for custom blocks using e.g. `\experiment hard 1.5`, which will set a block's hardness to 1.5.
+`/experiment hard` will do all of the above, and set the custom blocks (except white and black) to a hardness of 2.4 (takes about 3.5 seconds to break by hand).  You can enter a custom hardness for custom blocks using e.g. `/experiment hard 1.5`, which will set a block's hardness to 1.5.
 
 `/experiment off` will turn off the experimental settings.
 
